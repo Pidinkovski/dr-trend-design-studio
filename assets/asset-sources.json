@@ -1,0 +1,51 @@
+[
+  {
+    "name": "logo.webp",
+    "bytes": 5624,
+    "source": "https://zoovet.bg/files/i/marks-g178.webp"
+  },
+  {
+    "name": "carbon.webp",
+    "bytes": 124098,
+    "source": "https://zoovet.bg/files/2025/09/drtrend_tofu_soeva_koteshka_toaletna___aktiven_vyglen_6_l25_kg_fd1044c.webp"
+  },
+  {
+    "name": "green.webp",
+    "bytes": 131864,
+    "source": "https://zoovet.bg/files/2025/09/drtrend_tofu_soeva_koteshka_toaletna___zelen_chai_6_l25_kg_e03c18a.webp"
+  },
+  {
+    "name": "lavender.webp",
+    "bytes": 126702,
+    "source": "https://zoovet.bg/files/2025/09/drtrend_tofu_soeva_koteshka_toaletna___lavandula_6_l25_kg_80b2bad.webp"
+  },
+  {
+    "name": "natural.webp",
+    "bytes": 23580,
+    "source": "https://zoovet.bg/files/2026/02/drtrend_tofu_soeva_koteshka_toaletna___naturalna_6_l25_kg_bcd8b37.webp"
+  },
+  {
+    "name": "peach.webp",
+    "bytes": 129908,
+    "source": "https://zoovet.bg/files/2025/09/drtrend_tofu_soeva_koteshka_toaletna___praskova_6_l25_kg_4b5baa3.webp"
+  },
+  {
+    "name": "three.min.js",
+    "bytes": 651651,
+    "source": "https://unpkg.com/three@0.158.0/build/three.min.js"
+  },
+  {
+    "name": "three-LICENSE.txt",
+    "bytes": 1081,
+    "source": "https://unpkg.com/three@0.158.0/LICENSE"
+  },
+  {
+    "file": "cat-realistic.glb / cat-model.js",
+    "title": "Bicolor Cat",
+    "author": "kenchoo",
+    "license": "CC BY 4.0",
+    "source": "https://sketchfab.com/3d-models/bicolor-cat-e623a618ca344a8393d7ba4d63ec23cf",
+    "download": "https://raw.githubusercontent.com/code4fukui/vr-cats/main/bicolor_cat.glb",
+    "changes": "Scene composition, lighting, material roughness/metalness and playback speed."
+  }
+]
