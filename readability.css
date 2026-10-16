@@ -1,0 +1,266 @@
+/* Shared reading scale, applied to the studio and every colour/site concept. */
+:root {
+  --text-body: 20px;
+  --text-ui: 18px;
+  --text-caption: 16px;
+}
+body { line-height: 1.75; }
+p, li, dd { overflow-wrap: break-word; }
+.eyebrow { letter-spacing: .09em; line-height: 1.5; }
+.eyebrow:before { flex-shrink: 0; }
+.btn, .text-link, .navlinks, .studio-header nav,
+.nav-right .btn, .language button, .filters button,
+.compare-button, .product-compare, .concept-actions button,
+.living-copy .btn, .living-scene-footer button,
+.chapter-controls button, .chronicle-nav a, .collection-caption a {
+  font-size: var(--text-ui);
+}
+.btn { gap: 22px; min-height: 52px; }
+.text-link { line-height: 1.5; }
+.language button, .menu-toggle { min-width: 44px; min-height: 44px; }
+.language button { opacity: .8; }
+.language button.active { font-weight: 700; opacity: 1; }
+.preview-bar { flex-wrap: wrap; padding-block: 10px; line-height: 1.5; }
+.preview-actions { flex-wrap: wrap; }
+.preview-bar button { min-height: 36px; }
+.site-nav { gap: 24px; }
+.navlinks { gap: 26px; }
+.navlinks a { padding-block: 10px; }
+.nav-right { gap: 14px; }
+.nav-right .btn { min-height: 48px; }
+
+/* Let larger copy breathe, without changing the display headings. */
+.hero-copy p, .living-copy > p { max-width: 490px; line-height: 1.75; }
+.studio-hero p, .principles p, .story-intro p, .chapter-copy p,
+.compact-story p, .era p, .care-values-grid p, .manifesto-copy > p {
+  line-height: 1.8;
+}
+.studio-hero .hero-footer, .steps-strip, .principle-list { flex-wrap: wrap; }
+.studio-hero .hero-footer { gap: 20px; }
+.principle-list { gap: 18px 24px; }
+.section-heading p, .products-top p { max-width: 390px; }
+.chapter-copy p, .era p { max-width: 48ch; }
+.album-cover, .album-page { min-width: 0; }
+.album-cover .caption { max-width: 300px; }
+.chapter-controls button { width: 46px; height: 46px; flex-shrink: 0; }
+.chapter-controls { flex-wrap: wrap; }
+.hero-bottom { flex-wrap: wrap; align-items: center; letter-spacing: .07em; }
+.hero-caption { max-width: calc(100% - 50px); }
+
+/* Secondary information remains easy to read in every palette. */
+.muted, .palette-meta p, .palette-meta h3 small, .steps-strip b,
+.studio-note, .principle-list b, .story-footnote, .product-number,
+.product-info small, .product-notice, .site-footer p,
+.living-copy > p, .living-story-intro > p, .era p,
+.story-source-note, .era-word, .collection-caption p, .collection-meta,
+.photo-caption, .retail-section p, .dialog-copy p, .compare-grid dt {
+  opacity: 1;
+}
+.manifesto-copy > p { opacity: 1; max-width: 490px; }
+.manifesto-copy h2 span { opacity: .7; }
+.manifesto-copy h2 span.word-on { opacity: 1; }
+.photo-caption { letter-spacing: .08em; line-height: 1.6; }
+.care-manifesto { height: auto; min-height: max(780px, 85vh); }
+.manifesto-copy { min-height: inherit; height: auto; }
+
+/* Readable previews, including the text inside the palette mockups. */
+.studio-header { gap: 24px; }
+.studio-header nav { flex-wrap: wrap; gap: 16px 26px; }
+.studio-label, .edition { letter-spacing: .09em; }
+.studio-art .art-caption { gap: 20px; letter-spacing: .05em; line-height: 1.5; }
+.palette-art { height: 420px; }
+.mini-header { flex-wrap: wrap; gap: 10px; }
+.mini-header .brandmark { flex-shrink: 0; }
+.mini-header small { letter-spacing: .02em; line-height: 1.6; }
+.mini-content { padding-top: 28px; }
+.mini-content .eyebrow { letter-spacing: .03em; }
+.mini-content .mini-button { font-size: var(--text-ui); line-height: 1.4; }
+.palette-meta-top { flex-wrap: wrap; gap: 12px; }
+.palette-meta h3 { line-height: 1.3; }
+.demo-card { min-height: 475px; }
+.demo-card p { max-width: 390px; }
+.demo-card .btn { margin-top: 28px; }
+.review-form label { font-size: var(--text-ui); }
+.review-form select, .review-form textarea { font-size: var(--text-ui); min-width: 0; }
+.review-form .row { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.studio-footer { flex-wrap: wrap; }
+
+/* Catalogues and dialogs need space for labels as well as packaging. */
+.product-info { flex-direction: column; gap: 12px; }
+.product-info h3 { line-height: 1.25; }
+.product-compare { min-height: 44px; padding: 3px 0; gap: 10px; }
+.product-compare input { width: 20px; height: 20px; flex-shrink: 0; }
+.product-number { right: 15px; line-height: 1.5; }
+.product-visual img, .play-page .product-visual img { padding-top: 48px; }
+.product-plus { min-width: 40px; min-height: 40px; }
+.filter-row { flex-wrap: wrap; }
+.retail-links a { gap: 20px; flex-wrap: wrap; }
+.retail-links span { font-size: var(--text-ui); }
+.site-footer { flex-wrap: wrap; padding-bottom: 110px; }
+.site-footer p { max-width: 520px; }
+.palette-dock { max-width: calc(100vw - 24px); gap: 9px; padding: 10px 12px; }
+.palette-dock button { width: 32px; height: 32px; flex-shrink: 0; }
+.dialog-close { width: 44px; height: 44px; }
+.dialog-copy dl div { font-size: var(--text-ui); align-items: start; }
+.dialog-copy dd { max-width: 65%; }
+.dialog-copy p { font-size: var(--text-caption); line-height: 1.75; }
+.variant-picker { flex-wrap: wrap; gap: 10px; }
+.variant-picker button { width: 40px; height: 40px; }
+.compare-grid dl { font-size: var(--text-ui); }
+.compare-grid article { min-width: 0; }
+.compare-grid h3 { line-height: 1.3; overflow-wrap: break-word; }
+.compare-grid img { max-width: 100%; }
+.concept-actions { flex-wrap: wrap; }
+.concept-summary .swatches { flex-wrap: wrap; }
+
+/* The immersive story keeps its motion with larger supporting text. */
+.living-topline, .living-bottom, .visual-index, .collection-meta {
+  letter-spacing: .07em;
+  gap: 24px;
+  line-height: 1.6;
+}
+.living-topline, .living-bottom { flex-wrap: wrap; }
+.living-scene-footer { flex-wrap: wrap; margin-inline: 0; gap: 12px; }
+.living-scene-footer button { min-height: 44px; min-width: 44px; }
+.chronicle-art { height: 620px; }
+.chronicle-kicker, .chronicle-route > span { letter-spacing: .06em; }
+.chronicle-seal { width: 125px; height: 125px; }
+.chronicle-seal i { font-size: var(--text-caption); }
+.era { min-height: 600px; }
+.era-meta { letter-spacing: .04em; }
+.era-meta > span:first-child { flex-shrink: 0; width: 42px; height: 42px; }
+.story-source-note { line-height: 1.8; }
+.collection-caption { padding-top: 40px; }
+.collection-caption p { line-height: 1.65; }
+.fan-item { display: flex; flex-direction: column; justify-content: flex-end; }
+.fan-item span { min-height: 50px; padding: 8px 12px 14px; line-height: 1.4; }
+
+@media (min-width: 761px) {
+  /* Caption and product fan occupy separate rows, even on short laptops. */
+  .collection-pin { min-height: 860px; }
+  .product-fan { top: 350px; }
+  .fan-item { height: 330px; bottom: 14%; }
+  .fan-item img { height: 272px; }
+}
+@media (max-width: 1100px) and (min-width: 761px) {
+  .palette-art { height: 450px; }
+  .mini-header small { flex-basis: 100%; }
+  .mini-content { width: 75%; }
+  .mini-product { width: 34%; }
+  .chronicle-art { height: 590px; }
+  .chronicle { gap: 40px; }
+  .chronicle-seal { right: 15px; top: 215px; }
+}
+@media (min-width: 761px) and (max-height: 920px) {
+  /* A short viewport scrolls the complete scene instead of clipping its bottom. */
+  .collection-reveal { height: auto; min-height: 0; }
+  .collection-pin { position: relative; top: 0; height: auto; min-height: 920px; }
+  .product-fan { height: 520px; }
+  .chronicle-art { position: relative; top: 0; }
+}
+@media (max-width: 760px) {
+  :root { --text-body: 18px; --text-ui: 17px; }
+  .studio-header { flex-wrap: wrap; gap: 12px; }
+  .studio-header nav { width: 100%; justify-content: space-between; gap: 12px; }
+  .studio-hero .hero-footer { align-items: start; }
+  .studio-art { min-height: 400px; }
+  .studio-art .art-caption { bottom: 20px; left: 20px; right: 20px; }
+  .studio-art .art-caption span { max-width: 46%; }
+  .palette-art { height: 440px; padding: 20px; }
+  .mini-header small { flex-basis: 100%; }
+  .mini-content { width: 76%; }
+  .mini-content .eyebrow { max-width: 230px; }
+  .mini-product { width: 34%; bottom: 16px; right: 0; }
+  .palette-card[data-theme="sage"] .mini-header { margin-left: 20px; }
+  .demo-card { min-height: 0; padding: 28px; }
+  .demo-card h3 { line-height: 1.1; }
+  .review-form .row { grid-template-columns: 1fr; }
+  .preview-bar { padding: 12px 20px; gap: 8px; }
+  .preview-bar > span { width: 100%; }
+  .preview-bar .preview-actions { width: 100%; justify-content: space-between; gap: 8px 16px; }
+  .site-nav, .play-page .site-nav { min-height: 84px; gap: 12px; }
+  .nav-right { gap: 4px; }
+  .navlinks, .play-page .navlinks { top: 84px; padding: 16px 20px; gap: 6px; }
+  .language { gap: 0; }
+  .language button { min-width: 40px; }
+  .hero-seal { top: auto; bottom: 24px; right: 18px; width: 105px; height: 105px; font-size: 18px; }
+  .hero-caption { bottom: 140px; }
+  .hero-bottom { align-items: start; gap: 12px 18px; }
+  .album-cover, .album-page { padding: 30px 24px; }
+  .album-cover { min-height: 350px; }
+  .album-page { min-height: 0; }
+  .chapter-controls { gap: 12px; margin-bottom: 24px; }
+  .chapter-copy h3 { font-size: 32px; }
+  .chapter-next { align-self: flex-start; }
+  .products-grid, .play-page .products-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .products-grid .product-info h3 { font-size: 21px; }
+  .product-number { top: 10px; left: 12px; right: 12px; }
+  .product-visual { aspect-ratio: 1 / 1.2; }
+  .product-visual img, .play-page .product-visual img { padding: 60px 10px 22px; }
+  .product-plus { right: 8px; bottom: 8px; }
+  .palette-dock .dock-label { display: none; }
+  .site-footer { padding-bottom: 110px; }
+  .dialog-copy { padding: 28px 22px; }
+  .dialog-copy dl div { flex-wrap: wrap; gap: 6px 14px; }
+  .comparison-body { padding-inline: 18px; }
+  .compare-grid { gap: 16px; }
+  .compare-grid h3 { font-size: 21px; }
+  .compare-grid img { height: 140px; }
+  .living-topline { gap: 12px; font-size: var(--text-caption); }
+  .living-topline > span { max-width: 48%; }
+  .living-copy > p { max-width: 460px; }
+  .living-copy .hero-footnote { display: flex; position: static; margin-top: 30px; gap: 15px; }
+  .hero-footnote > span { font-size: 32px; }
+  .hero-footnote p { padding-left: 15px; }
+  .visual-index { position: static; align-self: flex-end; margin-top: 25px; }
+  .living-visual { min-height: 0; }
+  .living-visual .scene-container { height: 385px; }
+  .living-scene-footer .scene-status { flex: 1 1 190px; }
+  .living-bottom { gap: 20px; margin-top: 30px; }
+  .living-bottom > span { max-width: 100%; }
+  .living-bottom a { gap: 16px; }
+  .care-manifesto { height: auto; min-height: 0; }
+  .manifesto-copy { min-height: 780px; padding: 65px 0 40px; }
+  .manifesto-copy > p { max-width: 390px; }
+  .chronicle-art { height: auto; min-height: 465px; padding: 25px 24px 90px; }
+  .chronicle-year { margin-top: 25px; }
+  .chronicle-seal { width: 110px; height: 110px; top: 145px; right: 20px; }
+  .chronicle-route { margin-top: 10px; }
+  .chronicle-route > span { display: block; max-width: 230px; }
+  .chronicle-nav a { padding: 16px 6px; }
+  .era { min-height: 0; padding: 45px 0; }
+  .era-meta { gap: 15px; }
+  .care-values-grid { gap: 32px; }
+  .collection-caption { padding-top: 45px; }
+  .collection-pin { padding-bottom: 95px; }
+  .product-fan { padding-top: 32px; }
+  .fan-item, .reduce-motion .fan-item { height: 340px; flex-basis: 72%; }
+  .fan-item img { height: 280px; }
+  .collection-meta { bottom: 30px; gap: 15px; letter-spacing: .03em; }
+  .toast { width: calc(100% - 32px); border-radius: 16px; bottom: 90px; }
+}
+@media (max-width: 420px) {
+  .products-grid, .play-page .products-grid { grid-template-columns: 1fr; gap: 32px; }
+  .product-visual { aspect-ratio: 1 / .95; }
+  .product-visual img, .play-page .product-visual img { padding: 48px 28px 26px; }
+  .concept-summary .swatches { gap: 14px; }
+  .concept-actions { align-items: start; gap: 18px; }
+}
+@media (max-width: 350px) {
+  .wrap, .play-page .wrap { width: calc(100% - 32px); }
+  .brandmark { width: 96px; height: 40px; }
+  .brandmark img { width: 96px; height: 96px; top: -28px; }
+  .nav-right { gap: 0; }
+  .language button { min-width: 36px; }
+  .studio-header nav { gap: 8px 12px; justify-content: start; }
+  .palette-art { padding-inline: 16px; }
+  .mini-content { width: 83%; }
+  .review-section h2 { font-size: 35px; }
+  .compare-grid { grid-template-columns: 1fr; }
+  .compare-grid article + article { border-top: 1px solid var(--line); padding-top: 24px; }
+}
+@media print {
+  .site-footer { display: none; }
+  .care-manifesto, .manifesto-copy { min-height: 0; }
+  .collection-pin { min-height: 0; height: auto; }
+}
