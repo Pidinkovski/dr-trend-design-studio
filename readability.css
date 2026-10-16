@@ -156,6 +156,8 @@ p, li, dd { overflow-wrap: break-word; }
   .collection-reveal { height: auto; min-height: 0; }
   .collection-pin { position: relative; top: 0; height: auto; min-height: 920px; }
   .product-fan { height: 520px; }
+}
+@media (min-width: 761px) and (max-height: 780px) {
   .chronicle-art { position: relative; top: 0; }
 }
 @media (max-width: 760px) {
@@ -164,6 +166,9 @@ p, li, dd { overflow-wrap: break-word; }
   .studio-header nav { width: 100%; justify-content: space-between; gap: 12px; }
   .studio-hero .hero-footer { align-items: start; }
   .studio-art { min-height: 400px; }
+  .studio-art img { bottom: 98px; }
+  .studio-art .art-second { bottom: 85px; }
+  .studio-art .art-third { bottom: 80px; }
   .studio-art .art-caption { bottom: 20px; left: 20px; right: 20px; }
   .studio-art .art-caption span { max-width: 46%; }
   .palette-art { height: 440px; padding: 20px; }
@@ -206,8 +211,9 @@ p, li, dd { overflow-wrap: break-word; }
   .compare-grid { gap: 16px; }
   .compare-grid h3 { font-size: 21px; }
   .compare-grid img { height: 140px; }
-  .living-topline { gap: 12px; font-size: var(--text-caption); }
-  .living-topline > span { max-width: 48%; }
+  .living-topline { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; font-size: var(--text-caption); }
+  .living-topline > span { max-width: none; }
+  .living-topline > span:last-child { text-align: right; }
   .living-copy > p { max-width: 460px; }
   .living-copy .hero-footnote { display: flex; position: static; margin-top: 30px; gap: 15px; }
   .hero-footnote > span { font-size: 32px; }
